@@ -43,7 +43,6 @@ section{
     min-height: 100vh;
 }
 
-
 #education,
 #experience {
     background-color: rgb(243, 239, 239);
@@ -54,52 +53,132 @@ section h2 {
     text-align: center;
     margin-bottom: 30px;
     font-family: 'Times New Roman', Times, serif;
-    color: #635b5b;
+    color: brown;
 }
 
-
-#home p {
-    color: #793410;
+#home h3{
+    color: brown;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    padding: 90px 0 30px 260px;
+}
+#home p,#home h4 {
+    color: #24481a;
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+    padding: 0 20px 0 370px;
 }
-
-
+#home ul{
+    color: #24481a;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 10px 0 0 400px;
+}
 .card {
     width: 100%;
     height: auto;          
-    margin: 0;            
+    margin: 0;           
 }
 
 .card-body {
     display: block;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #24481a;
+    background-color: rgb(228, 225, 225); 
 }
-
+#experience h3,#experience h4{
+    color:#24481a;
+    font-family: 'Times New Roman', Times, serif;
+}
 #contact {
     min-height: 70vh;
 }
-
+#experience li{
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
 #contact .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .input-group {
     width: 100%;
-    max-width: 600px;      
+    max-width: 600px;    
 }
-
+.input-group-text{
+    font-size: 24px;
+    height: 50px;   
+}
 #contact a,
 #contact p {
     text-decoration: none;
-    color: #4F5C4A;
+    color: #24481a;
 }
 
 body {
     overflow-x: hidden;
 }
-button{
-    padding: left 50%; 
+
+.resume-btn {
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e7993b;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button-wrapper{
+    padding-left: 600px;
+    padding-top:40px;
+}
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 260px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 240px;
+    top: 10px;
+    height: 100%;
+    width: 4px;
+    background-color: #e7993b;
+}
+
+.step {
+    position: relative;
+    margin: 20px 0;
+    padding-top: 40px;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.step::before {
+    content: "";
+    position: absolute;
+    left: -26px;
+    top: 70px;
+    width: 12px;
+    height: 12px;
+    background-color: #e7993b;
+    border-radius: 50%;
+}
+#experience p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
 }
