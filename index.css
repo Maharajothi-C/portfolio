@@ -108,14 +108,16 @@ section h2 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.input-group {
-    width: 100%;
-    max-width: 600px;    
+.message-box {
+  min-height: 160px;
+  resize: vertical;
 }
-.input-group-text{
-    font-size: 24px;
-    height: 50px;   
+
+#contact .form-control {
+  padding: 12px;
+  font-size: 16px;
 }
+
 #contact a,
 #contact p {
     text-decoration: none;
@@ -136,9 +138,13 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
-.button-wrapper{
+#home .button-wrapper{
     padding-left: 600px;
     padding-top:40px;
+}
+#contact .button-wrapper{
+    padding-left: 250px;
+
 }
 .timeline {
     display: flex;
