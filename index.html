@@ -31,10 +31,10 @@
                             <p>I'm currently a final year student in Velammal College of Engineering and Technology from the stream of Computer Science.</p>
                             <h4>Skills: </h4>
                             <ul>
-                                <li>Frontend: HTML,Css,JavaScript</li>
-                                <li>Backend: Java,PHP</li>
-                                <li>Database: MySQL,Oracle SQL</li>
-                                <li>Tools: Git,Postman</li>
+                                <li>Frontend: HTML, CSS, JavaScript</li>
+                                <li>Backend: Java, PHP</li>
+                                <li>Database: MySQL, Oracle SQL</li>
+                                <li>Tools: Git, Postman</li>
                             </ul>
                             <div class="button-wrapper">
                                 <a href="f:\Resume, blazer image\maharajothi_resume.pdf" download><button type="button"class="resume-btn"> Resume </button></a>
@@ -132,31 +132,44 @@
             <section id="contact">
                 <h2>Contact</h2>
                 <div class="container">
-                    <div class="input-group mb-3">
-                        <label class="input-group-text">Email: </label>
-                        <input type="email"name="email" placeholder="email@gmail.com" class="form-control">
-                    </div>
-                    <div class="input-group mb-3 ">
-                        <label class="input-group-text">Name: </label>
-                        <input type="name" name="name" placeholder="Raju"class="form-control">
-                    </div>
-                    <div class="input-group mb-3">
-                        <label class="input-group-text">Message:  </label>
-                        <input type="textarea" name="message" class="form-control">
-                    </div>
-                    <button class="resume-btn">Submit</button>     
+                    <form action="https://formspree.io/f/xojnevkn" method="POST">
+                        <div class="row">
+                            <div class="col-md-6 p-2">
+                                <div class="input-group ">
+                                    <label class="input-group-text">Email: </label>
+                                    <input type="email"name="email" placeholder="email@gmail.com" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6 p-2">
+                                <div class="input-group ">
+                                    <label class="input-group-text">Name: </label>
+                                    <input type="name" name="name" placeholder="Raju"class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text">Subject: </label>
+                            <input type="text" name="subject" class="form-control">
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text">Message:  </label>
+                            <textarea type="text" name="message" class="form-control"></textarea>
+                        </div>
+                        <div class="button-wrapper">
+                            <button class="resume-btn" type="submit">Submit</button>
+                        </div> 
+                    </form>    
                 </div>
-                <div class="row">
-                    <div class="col-md-4 p-5">
-                        <label style="font-size: 20px; font-family: 'Times New Roman', Times, serif; padding-left: 20px;">Mail id: </label><a href="mailto:maharajothichithiraivel@gmail.com" style="text-decoration: none; font-size: 20px; font-family: 'Times New Roman', Times, serif;" target="_blank">maharajothichithiraivel@gmail.com</a>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <a href="https://www.linkedin.com/in/maharajothic/" target="_blank" class="contact-link">LinkedIn</a>
                     </div>
-                    <div class="col-md-4 p-5">
-                        <label style="font-size: 20px; font-family: 'Times New Roman', Times, serif;padding-left: 20px;">LinkedIn: </label><a href="https://www.linkedin.com/in/maharajothic/" style="text-decoration: none;font-size: 20px; font-family: 'Times New Roman', Times, serif;" target="_blank">linkedin.com/in/maharajothic/</a>
-                    </div>
-                    <div class="col-md-4 p-5">
-                        <label style="font-size: 20px; font-family: 'Times New Roman', Times, serif;padding-left: 20px;">Github: </label><a href="https://github.com/15Maharajothi?tab=overview&from=2026-02-01&to=2026-02-09" style="text-decoration: none;font-size: 20px; font-family: 'Times New Roman', Times, serif;" target="_blank">github.com/15Maharajothi</a>
+                    <div class="col-auto">
+                        <a href="https://github.com/Maharajothi-C" target="_blank" class="contact-link">GitHub</a>
                     </div>
                 </div>
+
             </section>
                                                                                                             <!--Footer-->
             <footer class="bg-dark text-white py-4 mt-5" style="height: 170px;">
