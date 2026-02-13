@@ -4,54 +4,181 @@
         <meta charset="utf-8">
         <title>Portfolio</title>
         <link rel="stylesheet" href="index.css">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
     <body>
                                                                                                             <!--Navbar-->
-        <nav id="navbar">
-            <h1 id="name">MAHARAJOTHI C</h1>
-            <a href="#home">Home</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+            <h1 style="font-family: 'Times New Roman', Times, serif;font-size:38px;color:white; margin:5px 0 0 17px">Portfolio</h1>
+            <ul class="navbar-nav custom-nav">
+                <li class="nav-item"><a href="#" class="nav-link" style="font-size: 20px;font-family: 'Times New Roman', Times, serif;">Home</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link" style="font-size: 20px;font-family: 'Times New Roman', Times, serif;">Education</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link " style="font-size: 20px;font-family: 'Times New Roman', Times, serif;">Project</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link " style="font-size: 20px;font-family: 'Times New Roman', Times, serif;">Experience</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link " style="font-size: 20px;font-family: 'Times New Roman', Times, serif;">Contact</a></li>
+            </ul>
+        </div>
+    </div>
                                                                                                             <!--Home-->
             <section id="home">
-                <h2>Home</h2>
-                <img src="working_girl.png" alt="image of a girl">
+                    <div class="row align-item-center mb-2">
+                        <div class="col-md-3">
+                            <img src="working_girl.png" alt="image of a girl"  class="rounded float-left" style="width: 800px; height: 450px;">
+                        </div>
+                        <div class="col-md-9">
+                            <h3>Maharajothi C</h3>
+                            <p>I'm currently a final year student in Velammal College of Engineering and Technology from the stream of Computer Science.</p>
+                            <h4>Skills: </h4>
+                            <ul>
+                                <li>Frontend: HTML, CSS, JavaScript</li>
+                                <li>Backend: Java, PHP</li>
+                                <li>Database: MySQL, Oracle SQL</li>
+                                <li>Tools: Git, Postman</li>
+                            </ul>
+                            <div class="button-wrapper">
+                                <a href="./maharajothi_resume.pdf" download><button type="button"class="resume-btn"> Resume </button></a>
+                            </div>  
+                        </div>
+                    </div>
             </section>
                                                                                                           <!--Education-->
             <section id="education">
                 <h2>Education</h2>
-                <div class="container">
-                    <h3>B.E COMPUTER SCIENCE ENGINEERING</h3>
-                        <h4>Velammal College of Engineering and Technology<br>
-                        CGPA: 7.6 (* 7<sup>th</sup> Sem)</h4>
-                    <h3>HIGHER SECONDARY EDUCATION</h3>
-                        <h4>Government Model Girls Higher Secondary School<br>
-                        Percentage: 90%</h4>
-                    <h3>SECONDARY SCHOOL LEAVING CERTIFICATE</h3>
-                        <h4>Government Model Girls Higher Secondary School<br>
-                        Percentage: 86.5%</h4>
+                <div class="timeline">
+                    <div class="step">
+                        <p>
+                            B.E Computer Science Engineering            (2022-2026)<br>
+                            Velammal College of Engineering and Technology.<br>
+                            CGPA: 7.6 
+                        </p>
+                    </div>
+                    <div class="step">
+                        <p>
+                            Higher Secondary Certificate (2021-2022)<br>
+                            Government Girls Higher Secondary School<br>
+                            Percentage: 90%
+                        </p>
+                    </div>
+                    <div class="step">
+                        <p>
+                            Secondary School Leaving Certificate (2019-2022)<br>
+                            Government Girls higher Secondary School<br>
+                            Percentage: 85.6%
+                        </p>
+                    </div>
                 </div>
+
             </section>
                                                                                                             <!--Projects-->
             <section id="projects">
                 <h2>Projects</h2>
-                <div class="container">
+                <div class="row">
+                    <div class="col-md-6 p-4">
+                        <div class="card">
+                            <img src="lms.png" alt="lms" style="padding: 10px; background-color:  rgb(229, 223, 223);  ">
+                            <div class="card-body">
+                                <h4>Learning Management System</h4>
+                                <p>Developed a web-based LMS using Laravel for 
+                                    managing courses, users, and assessments. 
+                                    Enabled user registration, course enrollment, and 
+                                    admin control for content management.<br/> 
+                                    • Tech: Laravel, PHP, HTML, JavaScript, MySQL </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-4">
+                        <div class="card">
+                            <img src="photo_blog.png" alt="lms" style="padding: 10px;background-color: rgb(229, 223, 223);  ">
+                            <div class="card-body">
+                                <h4>Photo Blog Website</h4>
+                                <p>A simple photography website featuring Home, 
+                                    About, Gallery, and Contact sections. 
+                                    Showcasing original photos in a clean, structured 
+                                    layout with smooth user experience and basic 
+                                    responsiveness.<br/>
+                                    • Tech: HTML, CSS, JavaScript, Bootstrap </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 </div>
             </section>
                                                                                                             <!--Experience-->
             <section id="experience">
                 <h2>Experience</h2>
-                <div class="container"></div>
+                <div class="container">
+                    <h3>Pydun Technology Private Limited </h3>
+                    <h4>  Madurai Offline Internship | Jun 2024 – Jul 2024 </h4>
+                    <div class="row">
+                        <div class="col-md-8  p-4">
+                            <ul style="color:#a06216"><li>Worked in a real-time offline development environment, contributing to the backend of a Learning Management System (LMS)</li>
+                                                        <li>Developed core backend functionalities using Laravel and PHP, including authentication, user management, and course workflows</li>
+                                                        <li>Designed and interacted with relational databases, understanding table relationships and data flow across modules</li>
+                                                        <li>Implemented role-based access control to ensure secure and structured user permissions</li>
+                                                        <li>Debugged and resolved backend issues during development, improving system stability and logic flow </li>
+                                                        <li>Followed industry development standards and collaborated closely with mentors during implementation</li>
+                                                        <li>Gained hands-on experience in backend architecture, understanding how individual modules integrate into a complete web application </li>
+                        </div>
+                        <div class="col-md-4 p-4">
+
+                        </div>
+                    </div>
+                </div>
+
             </section>
-                                                                                                            <!--Contact-->
-            <footer id="contact">
+                                                                                                            <!--contact-->
+            <section id="contact">
                 <h2>Contact</h2>
                 <div class="container">
+                    <form action="https://formspree.io/f/xojnevkn" method="POST">
+                        <div class="row">
+                            <div class="col-md-6 p-2">
+                                <div class="input-group ">
+                                    <label class="input-group-text">Email: </label>
+                                    <input type="email"name="email" placeholder="email@gmail.com" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6 p-2">
+                                <div class="input-group ">
+                                    <label class="input-group-text">Name: </label>
+                                    <input type="name" name="name" placeholder="Raju"class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text">Subject: </label>
+                            <input type="text" name="subject" class="form-control">
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text">Message:  </label>
+                            <textarea type="text" name="message" class="form-control"></textarea>
+                        </div>
+                        <div class="button-wrapper">
+                            <button class="resume-btn" type="submit">Submit</button>
+                        </div> 
+                    </form>    
+                </div>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <a href="https://www.linkedin.com/in/maharajothic/" target="_blank" class="contact-link">LinkedIn</a>
+                    </div>
+                    <div class="col-auto">
+                        <a href="https://github.com/Maharajothi-C" target="_blank" class="contact-link">GitHub</a>
+                    </div>
+                </div>
 
+            </section>
+                                                                                                            <!--Footer-->
+            <footer class="bg-dark text-white py-4 mt-5" style="height: 170px;">
+                <div class="container text-center">
+                    <p class="mb-2">Thanks!  for visiting my portfolio.</p>
+                        <div class="mb-2">
+                            <a href="#home" class="text-white text-decoration-none ">Back to Home</a>
+                        </div>
+                         <small class="d-block mt-3">&copy; 2026 Maharajothi's portfolio. All rights reserved.</small>
                 </div>
             </footer>
     </body>
